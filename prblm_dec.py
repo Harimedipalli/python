@@ -1,0 +1,2 @@
+
+decarative syntax with example
