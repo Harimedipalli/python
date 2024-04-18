@@ -14,51 +14,66 @@ List:
 
 # Append taked only one argument and will append the element at the end of the list.
 
-l = [1,2,3,4]
-l.append([5,6])
-print(l)
-l.append(5)
-print(l)
-
-
-
-# Extend will also add the elements at the end of the list but each element will be added in seperate index
-
-e = [1,2,3,4]
-e.extend([5,6,7])
-print(e)
-
-
-# pop will remove the element based on index
-
-e.pop(5)
-print(e)
-
-# remove will remove the element based on the element value
-
-e.remove(7)
-print(e)
-
-# insert will take 2 arguments. One is the index and second is the value that we are going to store in that index.
-
-e.insert(5,6)
-print(e)
-
-
-
-# copy will be copy the object to another object reference will be the same, it is a shallow copy
-
-print(id(e))
-e.copy()
-print(e)
-print(id(e))
-
-e.reverse()
-print(e)
-print(id(e))
+# l = [1,2,3,4]
+# l.append([5,6])
+# print(l)
+# l.append(5)
+# print(l)
+#
+#
+#
+# # Extend will also add the elements at the end of the list but each element will be added in seperate index
+#
+# e = [1,2,3,4]
+# e.extend([5,6,7])
+# print(e)
+#
+#
+# # pop will remove the element based on index
+#
+# e.pop(5)
+# print(e)
+#
+# # remove will remove the element based on the element value
+#
+# e.remove(7)
+# print(e)
+#
+# # insert will take 2 arguments. One is the index and second is the value that we are going to store in that index.
+#
+# e.insert(5,6)
+# print(e)
+#
+#
+#
+# # copy will be copy the object to another object reference will be the same, it is a shallow copy
+#
+# print(id(e))
+# e.copy()
+# print(e)
+# print(id(e))
+#
 # e.reverse()
+# print(e)
+# print(id(e))
+# # e.reverse()
+# # print(e)
+#
+#
+# e.sort()
 # print(e)
 
 
-e.sort()
-print(e)
+import copy
+
+l1 =[5,4,3,2,1]
+print(id(l1))
+l2 = copy.deepcopy(l1)
+print(id(l2))
+print(l2)
+
+
+
+
+
+
