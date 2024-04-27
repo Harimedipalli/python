@@ -35,9 +35,34 @@ print(d)
 print(d.update({"state":"karnataka"}))
 print(d)
 
+my_dict = {'name': 'John', 'age': 30, 'city': 'New York', "year":1996}
 
 
+print(my_dict["name"])
 
+my_dict["occupation"] = "engineer"
+
+print(my_dict)
+print("my")
+for key,value in my_dict.items():
+    if isinstance(value, int):
+        print("key is {}, value is {}".format(key,value))
+
+
+my_dict = {'name': 2, 'age': 30, 'city': 0, "year":1996}
+
+sorted_dict_keys = dict(sorted(my_dict.items()))
+
+print(sorted_dict_keys)
+
+
+sorted_dict_vales = dict(sorted(my_dict.items()))
+
+my_dict = {'name': 2, 'age': 30, 'city': 0, "year":1996}
+
+my_dict["name"] =[2,(3,4)]
+
+print(my_dict)
 
 
 
