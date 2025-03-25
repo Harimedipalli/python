@@ -37,3 +37,5 @@ for num in Duplicate_list:
         unique_list[index] = num
         index = index + 1
 print(unique_list)
+
+print("Hello world")
